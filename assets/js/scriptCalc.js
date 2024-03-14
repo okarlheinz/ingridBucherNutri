@@ -54,9 +54,6 @@ function calcular() {
 }
 
 
-
-
-
 function limpar () {
     document.querySelector('#peso').value =''
     document.querySelector('#altura').value =''
