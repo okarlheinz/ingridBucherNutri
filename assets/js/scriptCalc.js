@@ -33,7 +33,7 @@ function calcular() {
 
         var divAumento = document.createElement("div");
         var form = document.getElementById('calculadora')
-        divAumento.textContent = `Para aumento de peso, ou superávit calorico, o seu consumo de calorias deverá ser de ${gastoCaloricoTotal + 500} kcal.`
+        divAumento.textContent = `Para aumento de peso, ou superávit calorico, o seu consumo de calorias diárias deverá ser de ${gastoCaloricoTotal + 500} kcal.`
         divAumento.id= "divAumento"
         divAumento.classList.add = ('resultados')
         divAumento.style.marginBottom= '15px'
@@ -44,7 +44,7 @@ function calcular() {
         }
 
         var divReducao = document.createElement("div");
-        divReducao.textContent = `Para redução de peso, ou déficit calorico, o seu consumo de calorias deverá ser de ${gastoCaloricoTotal - 500} kcal.`
+        divReducao.textContent = `Para redução de peso, ou déficit calorico, o seu consumo de calorias diárias deverá ser de ${gastoCaloricoTotal - 500} kcal.`
         divReducao.id = "divReducao"
         divReducao.classList.add = ('resultados')
         divReducao.style.marginBottom= '15px'
