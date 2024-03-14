@@ -289,10 +289,18 @@
     text-align: center;
     gap: 15px;
 
+
+    #calculadora {
+        width: 80vw;
+        padding: 0 30px;
+    }
+
     h2 { 
         margin-top: 35px;
     }
     div {
+        align-items: center;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         margin-top: 15px;
@@ -303,6 +311,8 @@
     }
 
     input, select, button{
+        width: 80%;
+        max-width: 350px;
         height: 30px;
         border-radius: 5px;
         border: 2px solid transparent; /* Define uma borda transparente */

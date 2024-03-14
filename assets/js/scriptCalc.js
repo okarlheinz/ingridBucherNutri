@@ -22,7 +22,7 @@ function calcular() {
 
         let gastoCaloricoTotal = Math.ceil((TMB + esforco + ((exercicio*peso)/7)) * 100) / 100
         resultado.innerHTML = `Sua TMB é de: <strong>${TMB}</strong>`
-        resultadoTotal.innerHTML = `Seu gasto calorico é de: <strong>${Math.ceil(gastoCaloricoTotal*100) / 100} kcal</strong>`
+        resultadoTotal.innerHTML = `Seu gasto calorico é de: <strong>${gastoCaloricoTotal} kcal</strong>`
 
         var divAuExiste = document.getElementById("divAumento")
         var divRedExiste = document.getElementById("divReducao")
@@ -33,7 +33,7 @@ function calcular() {
 
         var divAumento = document.createElement("div");
         var form = document.getElementById('calculadora')
-        divAumento.textContent = `Para aumento de peso, ou superávit calorico, o seu consumo de calorias diárias deverá ser de ${gastoCaloricoTotal + 500} kcal.`
+        divAumento.textContent = `Para aumento de peso, ou superávit calorico, o seu consumo de calorias diárias deverá ser de ${Math.ceil(( gastoCaloricoTotal * 100 ) / 100 ) + 500} kcal.`
         divAumento.id= "divAumento"
         divAumento.classList.add = ('resultados')
         divAumento.style.marginBottom= '15px'
@@ -44,7 +44,7 @@ function calcular() {
         }
 
         var divReducao = document.createElement("div");
-        divReducao.textContent = `Para redução de peso, ou déficit calorico, o seu consumo de calorias diárias deverá ser de ${gastoCaloricoTotal - 500} kcal.`
+        divReducao.textContent = `Para redução de peso, ou déficit calorico, o seu consumo de calorias diárias deverá ser de ${Math.ceil(( gastoCaloricoTotal * 100 ) / 100 ) - 500} kcal.`
         divReducao.id = "divReducao"
         divReducao.classList.add = ('resultados')
         divReducao.style.marginBottom= '15px'
