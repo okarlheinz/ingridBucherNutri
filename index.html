@@ -126,7 +126,7 @@
             </div>
             <div data-aos="zoom-in" data-aos-delay="400">
                 <label for="peso">Peso:</label>
-                <input id="peso" type="number" placeholder="Insira o seu peso (kg)" required>
+                <input class="calc-input" id="peso" type="number" placeholder="Insira o seu peso (kg)" required>
             </div>
             <div data-aos="zoom-in" data-aos-delay="500">
                 <label for="altura">Altura:</label>
@@ -206,6 +206,21 @@
     </a>
     <script>
         AOS.init();
+
+
+        function trocarTipoInput() {
+            var input = document.querySelector('.calc-input');
+            if (window.innerWidth < 768) {
+                input.setAttribute('type', 'numeric');
+            } else {
+                input.setAttribute('type', 'number');
+            }
+        }
+
+        window.onload = trocarTipoInput;
+        window.onresize = trocarTipoInput;
+
+
     </script>
     <script src="/assets/js/scriptCalc.js"></script>
 </body>
