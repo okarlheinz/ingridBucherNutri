@@ -298,12 +298,15 @@
         margin-top: 15px;
     }
 
-    input select button{
-        width: 100px;
-        max-width: 100px
-    }
-
     button {
         margin: 15px 0;
     }
+}
+
+@media screen and (max-width: 768px) {
+
+            input, select, button{
+                height: 25px;
+            }
+
 }

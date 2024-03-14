@@ -354,14 +354,15 @@ i {
   flex-direction: column;
   margin-top: 15px;
 }
-.calc input select button {
-  width: 100px;
-  max-width: 100px;
-}
 .calc button {
   margin: 15px 0;
 }
 
+@media screen and (max-width: 768px) {
+  input, select, button {
+    height: 25px;
+  }
+}
 body {
   font-family: "Oswald", sans-serif;
   width: 100%;
