@@ -346,6 +346,9 @@ i {
   text-align: center;
   gap: 15px;
 }
+.calc h2 {
+  margin-top: 35px;
+}
 .calc div {
   display: flex;
   flex-direction: column;
