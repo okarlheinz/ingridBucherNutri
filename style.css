@@ -357,6 +357,9 @@ i {
 .calc button {
   margin: 15px 0;
 }
+.calc input, .calc select, .calc button {
+  height: 30px;
+}
 
 @media screen and (max-width: 768px) {
   input, select, button {
