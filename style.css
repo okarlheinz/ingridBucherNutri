@@ -338,6 +338,27 @@ i {
     max-width: 54px;
   }
 }
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+.calc div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.calc input select button {
+  width: 100px;
+  max-width: 100px;
+}
+.calc button {
+  margin: 15px 0;
+}
+
 body {
   font-family: "Oswald", sans-serif;
   width: 100%;

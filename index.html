@@ -111,6 +111,61 @@
             </div>
         </section>
     </section>
+            <!-- INICIO CALCULADORA -->
+    <section class="calc container">
+        <h2>Calculadora de Metabolismo Basal</h2>
+        <form id="calculadora" action="#">
+            <div>
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+            <div>
+                <label for="peso">Peso:</label>
+                <input id="peso" type="number" placeholder="Insira o seu peso" required>
+            </div>
+            <div>
+                <label for="altura">Altura:</label>
+                <input id="altura" type="number" placeholder="Insira a sua altura" required>
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input id="idade" type="number" placeholder="Insira a sua idade" required>
+            </div>
+            <div>
+                <label for="exercicio">Quantidade (em horas) de exercicio físico por semana:</label>
+                <select name="exercicio" id="exercicio" required>
+                    <option value="6">1 hora</option>
+                    <option value="12">2 horas</option>
+                    <option value="18">3 horas</option>
+                    <option value="24">4 horas</option>
+                    <option value="30">5 horas</option>
+                    <option value="36">6 horas</option>
+                    <option value="42">7 horas</option>
+                </select>
+            </div>
+            <div>
+                <label for="esforco">Esforço físico no dia-a-dia:</label>
+                <select name="esforco" id="esforco" required>
+                    <option value="400">Leve</option>
+                    <option value="600">Moderado</option>
+                    <option value="800">Muito esforço</option>
+                </select>
+            </div>
+            <div class="button">
+                <button type="submit" onclick="calcular()">Calcular</button>
+            </div>
+            <!-- <div class="button">
+                <button type="submit" onclick="limpar()">Limpar</button>
+            </div> -->
+            <div class='resultados' id="resultado"></div>
+            <div class='resultados' id="gasto-calorico-total"></div>
+        </form>
+    </section>
+                <!-- FIM DA CALCULADORA -->
+
     <div class="services">
         <h2>Venha conhecer</h2>
     </div>
@@ -150,5 +205,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="/assets/js/scriptCalc.js"></script>
 </body>
 </html>

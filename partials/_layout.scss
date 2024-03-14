@@ -280,3 +280,27 @@
     }
     
 }
+
+.calc{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    input select button{
+        width: 100px;
+        max-width: 100px
+    }
+
+    button {
+        margin: 15px 0;
+    }
+}
